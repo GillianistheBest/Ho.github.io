@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Tic Toe</title>
+  <style>
+    body {
+      background-color: deeppink;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Player VS Player</h1>
+
+  <div>
+    <button onclick ="one()">1</button>
+    <button onclick ="two()">2</button>
+    <button onclick ="three()">3</button>
+    <button onclick ="four()">4</button>
+    <button onclick ="five()">5</button>
+    <button onclick ="six()">6</button>
+    <button onclick ="seven()">7</button>
+    <button onclick ="eight()">8</button>
+    <button onclick ="nine()">9</button>
+  </div>
+
+  <table>
+    <tr>
+      <td id = "square1">1</td>
+      <td id = "square2">2</td>
+      <td id = "square3">3</td>
+    </tr>
+    <tr>
+      <td id = "square4">4</td>
+      <td id = "square5">5</td>
+      <td id = "square6">6</td>
+    </tr>
+    <tr>
+      <td id = "square7">7</td>
+      <td id = "square8">8</td>
+      <td id = "square9">9</td>
+    </tr>
+  </table>
+
+  <script>
+    var turn = "X";
+    var square1 = "empty";
+    var square2 = "empty";
+    var square3 = "empty";
+    var square4 = "empty";
+    var square5 = "empty";
+    var square6 = "empty";
+    var square7 = "empty";
+    var square8 = "empty";
+    var square9 = "empty";
+    
+    function one () {
+      if (square1=="empty") { 
+        square1=turn;
+        var box = document.getElementById("square1");
+        box.innerHTML = turn;
+        if (turn=="X") {
+          turn="O";
+        }
+        else {
+          turn="X";
+        }
+      }
+    } 
+
+    function two () {
+      if (square2=="empty") { 
+        square2=turn;
+        var box = document.getElementById("square2");
+        box.innerHTML = turn;
+        if (turn=="X") {
+          turn="O";
+        }
+        else {
+          turn="X";
+        }
+      }
+    } 
+
+    function three () {
+      if (square3=="empty") { 
+        square3=turn;
+        var box = document.getElementById("square3");
+        box.innerHTML = turn;
+        if (turn=="X") {
+          turn="O";
+        }
+        else {
+          turn="X";
+        }
+      }
+    } 
+
+    function four () {
+      if (square4=="empty") { 
+        square4=turn;
+        var box = document.getElementById("square4");
+        box.innerHTML = turn;
+        if (turn=="X") {
+          turn="O";
+        }
+        else {
+          turn="X";
+        }
+      }
+    } 
+
+    function five () {
+      if (square5=="empty") { 
+        square5=turn;
+        var box = document.getElementById("square5");
+        box.innerHTML = turn;
+        if (turn=="X") {
+          turn="O";
+        }
+        else {
+          turn="X";
+        }
+      }
+    } 
+
+    function six () {
+      if (square6=="empty") { 
+        square6=turn;
+        var box = document.getElementById("square6");
+        box.innerHTML = turn;
+        if (turn=="X") {
+          turn="O";
+        }
+        else {
+          turn="X";
+        }
+      }
+    } 
+
+    function seven () {
+      if (square7=="empty") { 
+        square7=turn;
+        var box = document.getElementById("square7");
+        box.innerHTML = turn;
+        if (turn=="X") {
+          turn="O";
+        }
+        else {
+          turn="X";
+        }
+      }
+    } 
+
+    function eight () {
+      if (square8=="empty") { 
+        square8=turn;
+        var box = document.getElementById("square8");
+        box.innerHTML = turn;
+        if (turn=="X") {
+          turn="O";
+        }
+        else {
+          turn="X";
+        }
+      }
+    } 
+
+    function nine () {
+      if (square9=="empty") { 
+        square9=turn;
+        var box = document.getElementById("square9");
+        box.innerHTML = turn;
+        if (turn=="X") {
+          turn="O";
+        }
+        else {
+          turn="X";
+        }
+      }
+    } 
+  </script>
+
+</body>
+
+</html>
