@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Tic Toe</title>
+  <style>
+    body {
+      background-color: deeppink;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Player VS Computer</h1>
+
+  <div>
+    <button onclick ="one()">1</button>
+    <button onclick ="two()">2</button>
+    <button onclick ="three()">3</button>
+    <button onclick ="four()">4</button>
+    <button onclick ="five()">5</button>
+    <button onclick ="six()">6</button>
+    <button onclick ="seven()">7</button>
+    <button onclick ="eight()">8</button>
+    <button onclick ="nine()">9</button>
+  </div>
+
+  <table>
+    <tr>
+      <td id = "square1">1</td>
+      <td id = "square2">2</td>
+      <td id = "square3">3</td>
+    </tr>
+    <tr>
+      <td id = "square4">4</td>
+      <td id = "square5">5</td>
+      <td id = "square6">6</td>
+    </tr>
+    <tr>
+      <td id = "square7">7</td>
+      <td id = "square8">8</td>
+      <td id = "square9">9</td>
+    </tr>
+  </table>
+
+  <script>
+    var square1 = "empty";
+    var square2 = "empty";
+    var square3 = "empty";
+    var square4 = "empty";
+    var square5 = "empty";
+    var square6 = "empty";
+    var square7 = "empty";
+    var square8 = "empty";
+    var square9 = "empty";
+    
+    function one () {
+      if (square1=="empty") { 
+        square1="X";
+        var box = document.getElementById("square1");
+        box.innerHTML = "X";
+        ten();
+      }
+    } 
+
+    function two () {
+      if (square2=="empty") { 
+        square2="X";
+        var box = document.getElementById("square2");
+        box.innerHTML = "X";
+        ten();
+      }
+    } 
+
+    function three () {
+      if (square3=="empty") { 
+        square3="X";
+        var box = document.getElementById("square3");
+        box.innerHTML = "X";
+        ten();
+      }
+    } 
+
+    function four () {
+      if (square4=="empty") { 
+        square4="X";
+        var box = document.getElementById("square4");
+        box.innerHTML = "X";
+        ten();
+      }
+    } 
+
+    function five () {
+      if (square5=="empty") { 
+        square5="X";
+        var box = document.getElementById("square5");
+        box.innerHTML = "X";
+        ten();
+      }
+    } 
+
+    function six () {
+      if (square6=="empty") { 
+        square6="X";
+        var box = document.getElementById("square6");
+        box.innerHTML = "X";
+        ten();
+      }
+    } 
+
+    function seven () {
+      if (square7=="empty") { 
+        square7="X";
+        var box = document.getElementById("square7");
+        box.innerHTML = "X";
+        ten();
+      }
+    } 
+
+    function eight () {
+      if (square8=="empty") { 
+        square8="X";
+        var box = document.getElementById("square8");
+        box.innerHTML = "X";
+        ten();
+      }
+    } 
+
+    function nine () {
+      if (square9=="empty") { 
+        square9="X";
+        var box = document.getElementById("square9");
+        box.innerHTML = "X";
+        ten ();
+      }
+    } 
+
+    function ten () {
+      while (true) {
+        var computer = Math.floor (Math.random () * 9);
+        if (computer==1 && square1 == "empty") {
+          square1="O";
+          var box = document.getElementById("square1");
+          box.innerHTML = "O";
+          break;
+        }
+        if (computer==2 && square2 == "empty") {
+          square2="O";
+          var box = document.getElementById("square2");
+          box.innerHTML = "O";
+          break;
+        }
+        if (computer==3 && square3 == "empty") {
+          square3="O";
+          var box = document.getElementById("square3");
+          box.innerHTML = "O";
+          break;
+        }
+        if (computer==4 && square4 == "empty") {
+          square4="O";
+          var box = document.getElementById("square4");
+          box.innerHTML = "O";
+          break;
+        }
+        if (computer==5 && square5 == "empty") {
+          square5="O";
+          var box = document.getElementById("square5");
+          box.innerHTML = "O";
+          break;
+        }
+        if (computer==6 && square6 == "empty") {
+          square6="O";
+          var box = document.getElementById("square6");
+          box.innerHTML = "O";
+          break;
+        }
+        if (computer==7 && square7 == "empty") {
+          square7="O";
+          var box = document.getElementById("square7");
+          box.innerHTML = "O";
+          break;
+        }
+        if (computer==8 && square8 == "empty") {
+          square8="O";
+          var box = document.getElementById("square8");
+          box.innerHTML = "O";
+          break;
+        }
+        if (computer==9 && square9 == "empty") {
+          square9="O";
+          var box = document.getElementById("square9");
+          box.innerHTML = "O";
+          break;
+        }
+      }
+    }    
+  </script>
+
+</body>
+
+</html>
