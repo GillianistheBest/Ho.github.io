@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Tic Toe</title>
+  <style>
+    body {
+      background-color: deeppink;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Tic A Toe</h1>
+
+  <div>
+    <button onclick ="PlayerVsPlayer()">Player Vs Player</button>
+    <button onclick ="PlayerVsComputer()">Player Vs Computer</button>
+  </div>
+
+  <script>
+    function PlayerVsPlayer(){
+      window.location.href = "pvp.html";
+    }
+    function PlayerVsComputer(){
+      window.location.href = "cvp.html";
+    }
+  </script>
+
+</body>
+
+</html>
